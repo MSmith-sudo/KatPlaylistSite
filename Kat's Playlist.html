@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Solar Sis Kat</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffccd5, #ffe43c);
+      background-image: url('https://i.pinimg.com/736x/fe/0e/0f/fe0e0f1520f53a4b92e50feaa28c9797.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #4b2e83;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    h1 {
+      background: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 50px;
+    }
+    p {
+      background: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .playlist {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.6);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .playlist a {
+      display: block;
+      margin: 10px 0;
+      color: #e75480;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .playlist a:hover {
+      text-decoration: underline;
+    }
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background: url('https://th.bing.com/th/id/OIP.SC_38pmGPJNRwqL4SAuxnwHaHa?rs=1&pid=ImgDetMain&adlt=strict');
+      animation: moveStars 50s linear infinite;
+      z-index: -1; /* Send stars to background */
+    }
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 5000px; }
+    }
+    .character-images {
+      margin-top: 20px;
+    }
+    .character-images img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <h1>Heya Solar Sis Kat! 🌞 <br> Your Favorite Kirby Tune is Playing 🎶</h1>
+  <p>Welcome to your special page! Inspired by Kirby, Yor, Studio Ghibli & Skyrim ✨</p>
+
+  <div class="character-images">
+    <img src="https://i.pinimg.com/736x/39/8a/52/398a52c5ca8921f7d7172f5f8f5ef51e.jpg" alt="Kirby">
+    <img src="https://i.pinimg.com/736x/f4/0c/4d/f40c4d88ac1863e74ed5e10b15371104.jpg" alt="Yor">
+    <img src="https://i.pinimg.com/736x/d5/b7/9e/d5b79e49e6ae98231735542f5b793dfd.jpg" alt="No Face">
+    <img src="https://i.pinimg.com/736x/93/ab/a5/93aba5fcac2ce95280b09ed0f9b2d0c7.jpg" alt="Skyrim Dragonborn">
+  </div>
+
+  <div class="playlist">
+    <h2>Your Playlist 🎵</h2>
+    <a href="https://www.youtube.com/watch?v=0v0-SIGw0iM&ab_channel=AllKirbySoundtracks" target="_blank">Kirby's Pad</a>
+    <a href="https://www.youtube.com/watch?v=JFCKPL5qMK0&ab_channel=Qumu" target="_blank">Greens Greens</a>
+    <a href="https://www.youtube.com/watch?v=fc_dscz6dm0&ab_channel=AdarThomas" target="_blank">A Town With An Ocean View</a>
+    <a href="https://www.youtube.com/watch?v=wAM7E3tuE-w&ab_channel=Cindery%7CLofi%7C" target="_blank">Gourmet Race</a>
+    <a href="https://www.youtube.com/watch?v=MZgBjQFMPvk&ab_channel=JakeGirnus" target="_blank">Path of The Wind</a>
+    <a href="https://www.youtube.com/watch?v=mngBMaLi5EA&ab_channel=Eternal" target="_blank">Sky Tower</a>
+  </div>
+</body>
+</html>
