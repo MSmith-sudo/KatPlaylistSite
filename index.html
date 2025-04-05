@@ -10,45 +10,52 @@
       background-image: url('https://i.pinimg.com/736x/fe/0e/0f/fe0e0f1520f53a4b92e50feaa28c9797.jpg');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       color: #4b2e83;
       text-align: center;
       font-family: 'Comic Sans MS', cursive, sans-serif;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       position: relative;
     }
-    h1 {
+
+    h1, p {
       background: rgba(255, 255, 255, 0.7);
       display: inline-block;
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 50px;
+      padding: 5vw;
+      border-radius: 5vw;
+      margin-top: 5vw;
+      max-width: 90%;
+      font-size: 4vw;
     }
+
     p {
-      background: rgba(255, 255, 255, 0.7);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin-top: 10px;
+      padding: 3vw;
+      font-size: 3.5vw;
     }
+
     .playlist {
-      margin-top: 30px;
+      margin-top: 5vw;
       background: rgba(255, 255, 255, 0.6);
       display: inline-block;
-      padding: 20px;
-      border-radius: 15px;
+      padding: 5vw;
+      border-radius: 5vw;
+      max-width: 90%;
     }
+
     .playlist a {
       display: block;
-      margin: 10px 0;
+      margin: 3vw 0;
       color: #e75480;
       text-decoration: none;
       font-weight: bold;
+      font-size: 4vw;
     }
+
     .playlist a:hover {
       text-decoration: underline;
     }
+
     .stars {
       position: fixed;
       width: 100%;
@@ -58,27 +65,53 @@
       pointer-events: none;
       background: url('https://th.bing.com/th/id/OIP.SC_38pmGPJNRwqL4SAuxnwHaHa?rs=1&pid=ImgDetMain&adlt=strict');
       animation: moveStars 50s linear infinite;
-      z-index: -1; /* Send stars to background */
+      z-index: -1;
+      background-size: cover;
     }
+
     @keyframes moveStars {
       from { background-position: 0 0; }
       to { background-position: -10000px 5000px; }
     }
+
     .character-images {
-      margin-top: 20px;
+      margin-top: 5vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
     .character-images img {
-      width: 150px;
-      margin: 10px;
-      border-radius: 20px;
+      width: 40vw;
+      margin: 2vw;
+      border-radius: 5vw;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+    }
+
+    .music-control {
+      margin-top: 5vw;
+    }
+
+    .play-button {
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 3vw 5vw;
+      border-radius: 5vw;
+      font-size: 4vw;
+      cursor: pointer;
+    }
+
+    .play-button:hover {
+      background-color: #d14372;
     }
   </style>
 </head>
 <body>
   <div class="stars"></div>
 
-  <h1>Heya Solar Sis Kat! 🌞 <br> Your Favorite Kirby Tune is Playing 🎶</h1>
+  <h1>Heya Solar Sis Kat! ✩️ <br> Your Favorite Kirby Tune is Ready to Play 🎶</h1>
   <p>Welcome to your special page! Inspired by Kirby, Yor, Studio Ghibli & Skyrim ✨</p>
 
   <div class="character-images">
@@ -97,5 +130,3 @@
     <a href="https://www.youtube.com/watch?v=MZgBjQFMPvk&ab_channel=JakeGirnus" target="_blank">Path of The Wind</a>
     <a href="https://www.youtube.com/watch?v=mngBMaLi5EA&ab_channel=Eternal" target="_blank">Sky Tower</a>
   </div>
-</body>
-</html>
